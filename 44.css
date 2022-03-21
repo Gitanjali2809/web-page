@@ -1,0 +1,231 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*CSS Variables*/
+:root{
+    --navbar-height:59px;
+}
+/*Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/*Navigation Bar:logo and image*/
+#logo{
+    margin: 10px 26px;
+}
+
+#logo img{
+    height: 80px;
+    width: 130px;
+    border-radius: 45px;
+    
+}
+/*Navigation Bar:list styling*/
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul{
+    display: flex;
+    font-family: cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    color: whitesmoke;
+    display: block;
+    padding:3px 22px ;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: whitesmoke;
+    background-color: black;
+   
+}
+/*Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 520px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+    background:url(./img/pizza-boy0.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 642px;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Cedarville Cursive', cursive;
+}
+/*services center*/
+#services{
+    margin-top: 0px;
+    margin-bottom: 27px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(11, 17, 11);
+    border-radius: 54px;
+    padding: 34px;
+    margin: 25px 36px;
+    background-color: rgb(241, 213, 179);
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+
+}
+#services .box p{
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+
+}
+#services{}
+#services{}
+#services{}
+
+/*    clients section   */
+ #client-section{
+   position: relative;
+  /* height: 300px;*/
+ }
+ #client-section::before{
+     content: "";
+     position: absolute;
+     background: url(./img/fast-food-g861d4097d_1920.jpg);
+     width: 100%;
+     height:90%;
+     z-index:-1 ;
+     opacity: 0.4;
+ }
+ #clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*  background: url(./img/fast-food-g861d4097d_1920.jpg);
+    width: 100%;
+    height: 48%;
+    z-index:-1 ;
+    opacity: 0.8;*/
+}
+
+.clients-item{
+    padding: 34px;
+}
+.clients-item img{
+    height: 50px;
+    width: 50px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(./img/g.cake.jpg) no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding:0.5rem ;
+    border-radius: 12px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 36%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Cedarville Cursive', cursive;
+
+}
+
+footer{
+    background:black;
+    color: aliceblue;
+    padding: 9px 20px;
+}
+
+/*    utility classes   */
+.h-primary{
+    font-size: 3.8rem;
+    padding:12px ;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.h-secondary{
+    font-size: 2.2rem;
+    padding:12px ;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: blanchedalmond;
+    color: black;
+    border-radius: 39px;
+    font-weight: bold;
+    margin: 19px;
+    font-size: 1.3rem;
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+}
